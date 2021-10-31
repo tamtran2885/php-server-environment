@@ -1,5 +1,4 @@
 <?php
-    // require_once(__DIR__ . "/../config/app.php");
     session_start();
 
     $_SESSION["username"] = $_POST["username"];
