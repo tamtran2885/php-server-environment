@@ -9,9 +9,6 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Panel</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Inactive</a>
-        </li>
       </ul> 
       <ul class="navbar-nav">
         <?php
@@ -22,7 +19,7 @@
             <?php echo $_SESSION["username"]; ?></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Logout</a>
+            <a class="nav-link" href="<?php echo BASE_URL ?>modules/close_sessions.php">Logout</a>
           </li>
           <?php
         }
