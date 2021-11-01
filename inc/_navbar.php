@@ -8,21 +8,15 @@
       <ul class="navbar-nav">
         <?php
         if (isset($_SESSION["email"])) {
-          ?>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Panel</a>
-          </li>
-        <?php
-        }
-        ?>
-      </ul>
-      <ul class="navbar-nav">
-        <?php
-        if (isset($_SESSION["email"])) {
           $email = $_SESSION["email"];
           $arrEmail = explode("@", $email);
           $user = $arrEmail[0];
           ?>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Panel</a>
+          </li>
+      </ul>
+      <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link">You are logged in as:
             <?= $user; ?></a>

@@ -83,7 +83,7 @@ if (!isset($_SESSION["email"])) {
         ?>
       </div>
       <div class="form-check mb-3">
-        <input class="form-check-input" type="checkbox" value="" id="is_accessible" value="yes">
+        <input class="form-check-input" type="checkbox" value="" id="is_accessible" name="is_accessible">
         <label class="form-check-label" for="is_accessible">
           Is accessible
         </label>
