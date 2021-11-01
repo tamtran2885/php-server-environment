@@ -45,11 +45,6 @@ if (!isset($_SESSION["username"])) {
       $toursData[] = $normalizedData;
       $jsonData = json_encode($toursData, JSON_PRETTY_PRINT);
       file_put_contents($toursJsonFile, $jsonData);
-
-      // Display message after adding new data successfully
-      // $_SESSION["message"] = "Successfully added new tour";
-      // header("Location: ");
-      // exit;
     }
   }
 ?>

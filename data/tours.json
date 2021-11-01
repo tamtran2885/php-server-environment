@@ -1,37 +1,42 @@
 [
-  {
-    "destination": "Belgium",
-    "number_of_tickets_available": 20,
-    "is_accessible": true
-  },
-  {
-    "destination": "Paris",
-    "number_of_tickets_available": 8,
-    "is_accessible": false
-  },
-  {
-    "destination": "Berlin",
-    "number_of_tickets_available": 8,
-    "is_accessible": false
-  },
-  {
-    "destination": "Essen",
-    "number_of_tickets_available": 6,
-    "is_accessible": false
-  },
-  {
-    "destination": "Olten",
-    "number_of_tickets_available": 7,
-    "is_accessible": false
-  },
-  {
-    "destination": "Amsterdam",
-    "number_of_tickets_available": 4,
-    "is_accessible": false
-  },
-  {
-    "destination": "Porto",
-    "number_of_tickets_available": 3,
-    "is_accessible": false
-  }
+    {
+        "destination": "Belgium",
+        "number_of_tickets_available": 20,
+        "is_accessible": true
+    },
+    {
+        "destination": "Paris",
+        "number_of_tickets_available": 8,
+        "is_accessible": false
+    },
+    {
+        "destination": "Berlin",
+        "number_of_tickets_available": 8,
+        "is_accessible": false
+    },
+    {
+        "destination": "Essen",
+        "number_of_tickets_available": 6,
+        "is_accessible": false
+    },
+    {
+        "destination": "Olten",
+        "number_of_tickets_available": 7,
+        "is_accessible": false
+    },
+    {
+        "destination": "Amsterdam",
+        "number_of_tickets_available": 4,
+        "is_accessible": false
+    },
+    {
+        "destination": "Porto",
+        "number_of_tickets_available": 3,
+        "is_accessible": false
+    },
+    {
+        "destination": "Stokhom",
+        "number_of_tickets_available": 9,
+        "is_accessible": false
+    }
 ]
