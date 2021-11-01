@@ -2,8 +2,8 @@
 require_once(__DIR__ . "/../config/app.php");
 session_start();
 
-if (!isset($_SESSION["username"])) {
-  header("Location: ./index.php");
+if (!isset($_SESSION["email"])) {
+  header("Location: ../index.php");
   exit;
 }
 ?>
@@ -66,7 +66,7 @@ if (!isset($_SESSION["username"])) {
         <?php
           if(isset($formErrors["destination"])) {
             ?>
-              <strong><?php echo $formErrors["destination"]; ?></strong>
+              <strong><?= $formErrors["destination"]; ?></strong>
             <?php
           }
         ?>
@@ -77,7 +77,7 @@ if (!isset($_SESSION["username"])) {
         <?php
           if(isset($formErrors["number_of_tickets_available"])) {
             ?>
-              <strong><?php echo $formErrors["number_of_tickets_available"]; ?></strong>
+              <strong><?= $formErrors["number_of_tickets_available"]; ?></strong>
             <?php
           }
         ?>
@@ -108,13 +108,13 @@ if (!isset($_SESSION["username"])) {
         ?>
         <div class="row">
           <div class="col">
-            <h3><?php echo htmlspecialchars($tourData['destination'], ENT_QUOTES); ?></h3>
+            <h3><?= htmlspecialchars($tourData['destination'], ENT_QUOTES); ?></h3>
           </div>
           <div class="col-6">
-            <h3><?php echo htmlspecialchars($tourData['number_of_tickets_available'], ENT_QUOTES); ?></h3>
+            <h3><?= htmlspecialchars($tourData['number_of_tickets_available'], ENT_QUOTES); ?></h3>
           </div>
           <div class="col">
-            <h3><?php echo $tourData['is_accessible'] ? "Yes" : "No"; ?></h3>
+            <h3><?= $tourData['is_accessible'] ? "Yes" : "No"; ?></h3>
           </div>
         </div>
         <?php

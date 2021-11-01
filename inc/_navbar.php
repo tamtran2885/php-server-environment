@@ -6,20 +6,29 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Panel</a>
-        </li>
-      </ul> 
+        <?php
+        if (isset($_SESSION["email"])) {
+          ?>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Panel</a>
+          </li>
+        <?php
+        }
+        ?>
+      </ul>
       <ul class="navbar-nav">
         <?php
-        if (isset($_SESSION["username"])) {
+        if (isset($_SESSION["email"])) {
+          $email = $_SESSION["email"];
+          $arrEmail = explode("@", $email);
+          $user = $arrEmail[0];
           ?>
           <li class="nav-item">
             <a class="nav-link">You are logged in as:
-            <?php echo $_SESSION["username"]; ?></a>
+            <?= $user; ?></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo BASE_URL ?>modules/close_sessions.php">Logout</a>
+            <a class="nav-link" href="<?= BASE_URL ?>modules/close_sessions.php">Logout</a>
           </li>
           <?php
         }

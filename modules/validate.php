@@ -1,18 +1,19 @@
 <?php
     session_start();
 
-    $_SESSION["username"] = $_POST["username"];
+    $_SESSION["email"] = $_POST["email"];
     $_SESSION["password"] = $_POST["password"];
 
-    echo $username . " " . $password;
-
-    $usernameDB = "tamtran";
+    $emailDB = "example@gmail.com";
     $passwordDB = "123456";
 
-    if (isset($_POST["password"], $_POST["username"])) {
-        if($_SESSION["username"] === $usernameDB && $_SESSION["password"] === $passwordDB) {
+    if (isset($_POST["password"], $_POST["email"])) {
+        if($_SESSION["email"] === $emailDB && $_SESSION["password"] === $passwordDB) {
             $_SESSION["message"] = "Thanks you for telling us your name!";
             header("Location: ../pages/panel.php");
+            exit;
+        } else {
+            header("Location: ../index.php");
             exit;
         }
     }
