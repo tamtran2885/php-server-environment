@@ -42,6 +42,8 @@ if (!isset($_SESSION["email"])) {
 
     // 3. Convert data to JSON and save data to file tours.json
     if (count($formErrors) === 0) {
+      // Provide a unique ID to new input
+      $normalizedData["id"] = count($toursData) + 1;
       $toursData[] = $normalizedData;
       $jsonData = json_encode($toursData, JSON_PRETTY_PRINT);
       file_put_contents($toursJsonFile, $jsonData);
@@ -101,6 +103,9 @@ if (!isset($_SESSION["email"])) {
       </div>
       <div class="col">
         <h3>Is accessible</h3>
+      </div>
+      <div class="col">
+        <h3>Actions</h3>
       </div>
     </div>
     <?php

@@ -1,27 +1,32 @@
 [
-  {
-    "destination": "Belgium",
-    "number_of_tickets_available": 20,
-    "is_accessible": true
-  },
-  {
-    "destination": "Paris",
-    "number_of_tickets_available": 8,
-    "is_accessible": false
-  },
-  {
-    "destination": "Berlin",
-    "number_of_tickets_available": 8,
-    "is_accessible": false
-  },
-  {
-    "destination": "Essen",
-    "number_of_tickets_available": 6,
-    "is_accessible": false
-  },
-  {
-    "destination": "Olten",
-    "number_of_tickets_available": 7,
-    "is_accessible": false
-  }
+    {
+        "is": 1,
+        "destination": "Belgium",
+        "number_of_tickets_available": 20,
+        "is_accessible": true
+    },
+    {
+        "destination": "Porto",
+        "number_of_tickets_available": 5,
+        "is_accessible": true,
+        "id": 2
+    },
+    {
+        "destination": "Lapland",
+        "number_of_tickets_available": 4,
+        "is_accessible": true,
+        "id": 3
+    },
+    {
+        "destination": "Lapland",
+        "number_of_tickets_available": 4,
+        "is_accessible": true,
+        "id": 4
+    },
+    {
+        "destination": "Paris",
+        "number_of_tickets_available": 4,
+        "is_accessible": true,
+        "id": 5
+    }
 ]
